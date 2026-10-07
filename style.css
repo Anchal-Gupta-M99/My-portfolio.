@@ -1,0 +1,419 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f4f6;
+    color: #1c1b1b;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    background-color: #1d2633;
+    padding: 20px 8%;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: white;
+    margin-right: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   ALL SECTIONS
+========================= */
+
+section {
+    min-height: 80vh;
+    padding: 80px 8%;
+}
+
+
+/* =========================
+   HOME SECTION
+========================= */
+
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+#home div:first-child {
+    max-width: 600px;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#home a {
+    display: inline-block;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 12px 24px;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+#home a:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   PROFILE PHOTO
+========================= */
+
+#home img {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #2563eb;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    background-color: white;
+}
+
+#about h2,
+#skills h2,
+#education h2,
+#projects h2,
+#educations h2,
+#contact h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 800px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills {
+    background-color: #f5f7fa;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    list-style: none;
+}
+
+#skills li {
+    background-color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+#education {
+    background-color: white;
+}
+
+#education h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#education p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects {
+    background-color: #f5f7fa;
+}
+
+#projects>div {
+    background-color: white;
+
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 25px;
+
+    transition: 0.3s;
+}
+
+#projects>div:hover {
+    transform: translateY(-8px);
+}
+
+#projects h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#projects p {
+    margin-bottom: 15px;
+}
+
+#projects a {
+    display: inline-block;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+#projects a:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background-color: white;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#contact a {
+    display: inline-block;
+
+    margin-right: 20px;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #1f2937;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+
+    #home img {
+        width: 220px;
+        height: 220px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    #skills ul {
+        justify-content: center;
+    }
+
+    /* DARK MODE BUTTON */
+
+#themeButton {
+    background-color: #374151;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#themeButton:hover {
+    background-color: #4b5563;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+body.dark-mode #about,
+body.dark-mode #education,
+body.dark-mode #contact {
+    background-color: #1f2937;
+}
+
+body.dark-mode #skills,
+body.dark-mode #projects {
+    background-color: #111827;
+}
+
+body.dark-mode #skills li,
+body.dark-mode #projects > div {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark-mode #about p,
+body.dark-mode #education p,
+body.dark-mode #projects p,
+body.dark-mode #contact p {
+    color: #e5e7eb;
+}
+
+}
+#shareButton {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#shareButton:hover {
+    background-color: #1d4ed8;
+}
